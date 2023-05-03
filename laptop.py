@@ -32,7 +32,7 @@ if st.button('Estimasi Harga'):
     else: 
         ips = 0
     predict = model.predict(
-        [[ram,weight,touchscreen,ips,hdd,ssd]]
+        [[company,ram,weight,touchscreen,ips,hdd,ssd]]
     )
     st.write ('Estimasi harga Laptop (euro) : ', predict)
     st.write ('Estimasi harga Laptop (rupiah) :', predict*16300)
