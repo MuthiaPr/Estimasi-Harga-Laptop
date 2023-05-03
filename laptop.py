@@ -6,6 +6,8 @@ model = pickle.load(open('estimasi_laptop_price.sav', 'rb'))
 
 st.title('Estimasi Harga Laptop')
 
+company = st.selectbox('Company')
+
 ram = st.selectbox('Ram_GB',[2, 4, 6, 8, 12, 16, 24, 32, 64])
 
 weight = st.number_input('Weight_KG')
