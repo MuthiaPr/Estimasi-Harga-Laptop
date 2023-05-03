@@ -2,7 +2,6 @@ import pickle
 import streamlit as st
 import numpy as np
 
-
 df = pickle.load(open('estimasi_laptop_price.sav', 'rb'))
 
 st.title('Estimasi Harga Laptop')
@@ -19,8 +18,7 @@ hdd = st.selectbox('HDD',[0, 128, 256, 512, 1024, 2048])
 
 ssd = st.selectbox('SSD',[0, 8, 128, 256, 512, 1024])
 
-
-if st.button('Predict price'):
+if st.button('Estimasi Harga'):
     if touchscreen == 'Yes':
         touchscreen = 1
     else: 
@@ -30,8 +28,6 @@ if st.button('Predict price'):
         ips = 1
     else: 
         ips = 0
-
-if st.button('Estimasi Harga'):
     predict = model.predict(
         [[Ram_GB,Weight_KG,TouchScreen,IPS,HDD,SSD]]
     )
