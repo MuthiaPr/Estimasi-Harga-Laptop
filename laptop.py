@@ -3,11 +3,9 @@ import streamlit as st
 import numpy as np
 
 
-model = pickle.load(open('estimasi_laptop_price.sav', 'rb'))
+df = pickle.load(open('estimasi_laptop_price.sav', 'rb'))
 
 st.title('Estimasi Harga Laptop')
-
-df = pickle.load(open('df.pkl', 'rb'))
 
 st.title("Estimasi Harga Laptop")
 
