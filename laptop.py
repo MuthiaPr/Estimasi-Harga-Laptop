@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 import numpy as np
 
-df = pickle.load(open('estimasi_laptop_price.sav', 'rb'))
+model = pickle.load(open('estimasi_laptop_price.sav', 'rb'))
 
 st.title('Estimasi Harga Laptop')
 
