@@ -1,12 +1,9 @@
 import pickle
 import streamlit as st
-import numpy as np
 
 model = pickle.load(open('estimasi_laptop_price.sav','rb'))
 
 st.title('Estimasi Harga Laptop')
-
-company = st.selectbox('Brand',model ['Company'].unique())
 
 ram = st.selectbox('Ram_GB',[2, 4, 6, 8, 12, 16, 24, 32, 64])
 
