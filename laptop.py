@@ -32,4 +32,4 @@ if st.button('Estimasi Harga'):
         [[ram,weight,touchscreen,ips,hdd,ssd]]
     )
     st.write ('Estimasi harga Laptop (euro) : ', predict)
-    st.write ('Estimasi harga Laptop (rupiah) :', predict*16216,51)
+    st.write ('Estimasi harga Laptop (rupiah) :', predict*16300)
