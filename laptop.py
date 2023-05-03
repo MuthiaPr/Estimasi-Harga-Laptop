@@ -7,7 +7,6 @@ model = pickle.load(open('estimasi_laptop_price.sav', 'rb'))
 
 st.title('Estimasi Harga Laptop')
 
-pipe = pickle.load(open('pipe.pkl', 'rb'))
 df = pickle.load(open('df.pkl', 'rb'))
 
 st.title("Estimasi Harga Laptop")
