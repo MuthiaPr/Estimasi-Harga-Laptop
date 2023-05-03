@@ -3,11 +3,10 @@ import streamlit as st
 import numpy as np
 
 model = pickle.load(open('estimasi_laptop_price.sav','rb'))
-df = pickle.load(open('df.pkl','rb'))
 
 st.title('Estimasi Harga Laptop')
 
-company = st.selectbox('Brand',df ['Company'].unique())
+company = st.selectbox(['Company'].unique())
 
 ram = st.selectbox('Ram_GB',[2, 4, 6, 8, 12, 16, 24, 32, 64])
 
